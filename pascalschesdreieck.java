@@ -2,7 +2,7 @@
 public class pascalschesdreieck {
 
 	public static int Pascal( int Zeile, int Spalte ) {
-		if( Spalte == 1 ) {
+		if( Spalte == 0 ) {
 			return 1;
 		}else 
 			if( Zeile == Spalte ) {
