@@ -12,6 +12,9 @@ public class Schweine extends Tiere {
             else {
                 return false;
         }
+            if (java.lang.System.currentTimeMillis() >= zeitvg + 60000) {
+                setAlter(alter + 1);
+            }
     }
     public void Schlachten() {
         if (Schlachtreif() == true)
