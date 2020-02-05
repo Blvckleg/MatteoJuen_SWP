@@ -10,13 +10,13 @@ public class Hühner extends Tiere{
 
     }
     public int Eier(){
-        while(Geschlecht == "W") {
+        if (Geschlecht == "W") {
             if (java.lang.System.currentTimeMillis() >= zeitvg+60000) {
                 return Eier + EierProStunde;
             }
-            return Eier;
         }
         zeitvg = java.lang.System.currentTimeMillis();
+        return Eier;
     }
 
 }

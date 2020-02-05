@@ -9,13 +9,13 @@ public class Kühe  extends Tiere{
 
 
     public int Milch(){
-        while(MilchProStunde > 0) {
+        if (MilchProStunde > 0) {
             if (java.lang.System.currentTimeMillis() >= zeitvg+60000) {
                 return Milch + MilchProStunde;
             }
-            return Milch;
         }
         zeitvg = java.lang.System.currentTimeMillis();
+        return Milch;
     }
 
 }
