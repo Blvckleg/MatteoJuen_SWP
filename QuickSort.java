@@ -1,11 +1,42 @@
-import java.util.ArrayList;
-
 public class QuickSort {
-    public static ArrayList<Integer> list(ArrayList<Integer> list1, ArrayList<Integer> list2) {
-        for (int i : list) {
-            if (list[i] <= list[i + 1]) {
-                System.out.println("Array sorted");
-            }
+    public static void main(String[] args){
+        int[] arr = {6,3,8,23,83,8,5,43};
+    }
+    public static void qs(Integer[] arr){
+        quickSort(arr,0,arr.length-1);
+    }
+
+    public static void quickSort(Integer[] arr,int startindex,int endindex){
+        int idx = partition(arr, startindex, endindex);
+
+        if (startindex < idx - 1) {
+            quickSort(arr, startindex, idx - 1);
         }
+
+        if (endindex > idx) {
+            quickSort(arr, idx, endindex);
+        }
+    }
+
+    public static int partition(Integer[] arr,int left,int right){
+        int pivot=arr[left];
+        while(left<=right){
+            while(arr[left]<pivot){
+                left++;
+            }
+            while(arr[right]>pivot){
+                right--;
+            }
+            if(left<=right){
+                int tmp = arr[left];
+                arr[left] = arr[right];
+                arr[right] = tmp;
+
+                left++;
+                right--;
+            }
+
+        }
+        return left;
     }
 }
