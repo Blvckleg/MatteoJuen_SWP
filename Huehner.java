@@ -1,9 +1,9 @@
-public class Hühner extends Tiere{
+public class Huehner extends Tiere{
     private int Eier;
     private int EierProStunde;
     private String Geschlecht;
     long zeitvg = java.lang.System.currentTimeMillis();
-    public Hühner(int alter, String Geburtsdatum, int Preis, String Name, int EierProStunde, String Geschlecht) {
+    public Huehner(int alter, String Geburtsdatum, int Preis, String Name, int EierProStunde, String Geschlecht) {
         super(alter, Geburtsdatum, Preis, Name);
         this.Geschlecht = Geschlecht;
         this.EierProStunde = EierProStunde;

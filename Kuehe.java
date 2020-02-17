@@ -1,8 +1,8 @@
-public class Kühe  extends Tiere{
+public class Kuehe  extends Tiere{
     private int MilchProStunde;
     private int Milch = 0;
     long zeitvg = java.lang.System.currentTimeMillis();
-    public Kühe(int alter, String Geburtsdatum, int Preis, String Name, int MilchProStunde) {
+    public Kuehe(int alter, String Geburtsdatum, int Preis, String Name, int MilchProStunde) {
         super(alter, Geburtsdatum, Preis, Name);
         this.MilchProStunde = MilchProStunde;
     }
