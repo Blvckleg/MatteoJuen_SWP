@@ -28,6 +28,7 @@ public class MergeSort {
             }
             if (left.get(i) <= right.get(j)) {
                 ret.add(left.get(i));
+                i++;
             }else {
                 ret.add(right.get(j));
                 j++;
@@ -42,5 +43,19 @@ public class MergeSort {
             System.out.print(" ");
         }
         System.out.println();
+    }
+
+    public static void main(String[] args) {
+        List<Integer> list = new ArrayList<Integer>();
+        list.add(0);
+        list.add(3);
+        list.add(9);
+        list.add(17);
+        list.add(12);
+
+        list = mergeSort(list);
+        print(list);
+
+
     }
 }
