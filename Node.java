@@ -2,6 +2,7 @@ public class Node {
 	
     private int value;
     private Node next = null;
+    private Node last = null;
 
     public Node(int value) {
         this.value = value;
@@ -25,5 +26,17 @@ public class Node {
 
     public void setValue(int value) {
         this.value = value;
+    }
+	
+    public boolean hasLast() {
+        return last != null;
+    }
+	
+    public Node last() {
+        return this.last;
+    }
+	
+        public void setLast(Node last) {
+        this.last = last;
     }
 }
